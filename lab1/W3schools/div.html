@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML div</title>
+  <style>
+    .center {
+      width: 300px;
+      margin: auto;
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    .container {
+      display: flex;
+    }
+    .box {
+      width: 33%;
+      border: 1px solid black;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- simple div -->
+  <div>
+    <h2>London</h2>
+    <p>Capital of England</p>
+  </div>
+
+  <!-- centered div -->
+  <div class="center">
+    <h2>Centered div</h2>
+  </div>
+
+  <!-- divs side by side -->
+  <div class="container">
+    <div class="box">London</div>
+    <div class="box">Oslo</div>
+    <div class="box">Rome</div>
+  </div>
+
+</body>
+</html>

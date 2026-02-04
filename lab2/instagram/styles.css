@@ -1,0 +1,227 @@
+html, body {
+    height: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1c1e21;
+    position: relative;
+}
+.gr{
+   
+    background: linear-gradient(to right, orange, red, purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: inline;
+}
+
+.insta-logo {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    
+}
+.layout {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    gap: 60px;
+    
+    width: 100%;
+    
+         
+    margin: 0 auto;
+    padding: 0 40px;
+    flex: 1;
+}
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.left h1 {
+    flex: 1;
+    padding-top: 50px;
+    text-align: center;
+    
+}
+.right {
+    font-family: sans-serif;
+    border-left: 2px solid lightgray;
+    padding: 70px 40px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    
+}
+
+.right input{
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    margin-bottom: 12px;
+}
+.right button{
+    width: 100%;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid lightgray;
+    margin-bottom: 12px;
+    background:blue;
+    color:white;
+}
+form {
+    margin-bottom: 50px;
+}
+form a {
+    display: block;
+    text-align: center;
+    color: #1c1e21;
+    text-decoration: none;
+    margin-top: 6px;
+}
+form p {
+    margin-bottom: 10px;
+}
+form a:hover {
+    text-decoration: underline;
+}
+
+.extra-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    
+
+  
+}
+
+.facebook {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 12px;
+    border: 1px solid #dbdbdb;
+    border-radius: 30px;
+
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    background: #f9f9f9;
+}
+
+.facebook img {
+    width: 18px;
+}
+
+.create-btn {
+    text-align: center;
+    padding: 12px;
+
+    border: 1px solid #1877f2;
+    border-radius: 30px;
+
+    text-decoration: none;
+    color: #1877f2;
+    font-weight: 500;
+}
+.meta-logo{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #1c1e21;
+    font-size: 14px;
+}
+
+
+.footer {
+    border-top: 1px solid lightgray;
+    padding: 20px;
+    color: gray;
+    text-decoration: None;
+    font-size: 12px;
+    text-align: center;
+}
+.footer a{
+    color: gray;
+    text-decoration: None;
+    margin: 8px;
+    font-size: 12px;
+}
+.footer-links {
+    margin: 10px;
+}
+@media (max-width: 900px) {
+
+    .layout {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .right {
+        border-left: none;
+        border-top: 2px solid lightgray;
+        padding: 30px 20px;
+    }
+
+    .hero-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .insta-logo {
+        position: static;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .left h1 {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
+    .right input {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .right button {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .footer {
+        font-size: 10px;
+        padding: 15px;
+    }
+}

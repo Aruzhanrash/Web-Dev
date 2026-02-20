@@ -1,0 +1,13 @@
+.title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: blue;
+  border-radius: 10px;
+}
